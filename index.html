@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DH Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Denavit-Hartenberg Calculator</h1>
+
+<input type="number" id="jointCount" min="1" value="3">
+<button onclick="createTable()">Create Input Table</button>
+
+<br>
+
+<input type="checkbox" id="RadianToggle" value="false"> 
+<label for="RadianToggle"> Use Radians</label><br>
+
+<!-- Dynamically generated DH parameter table -->
+<div id="dhInputs"></div>
+
+<!-- Calculation results will appear here -->
+<div id="results"></div>
+
+
+
+
+
+<!-- Load JavaScript after page content -->
+<script src="script.js"></script>
+</body>
+</html>
