@@ -1,4 +1,4 @@
-#Denavit Hartenberg Tranformation calculator
+# Denavit Hartenberg Tranformation calculator
 
 Denavit-Hartemberg parameters are used to attach reference frames to the joints of a spatial kinematic chain.
 

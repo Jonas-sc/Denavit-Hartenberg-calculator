@@ -9,16 +9,24 @@
 <h1>Denavit-Hartenberg Calculator</h1>
 
 <details>
-  <summary>About this program</summary>
+  <summary>Show Documentation</summary>
+
   <div id="readme-content">Loading...</div>
+
 </details>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
 <script>
-fetch("README.md")
-    .then(response => response.text())
-    .then(text => {
-    document.getElementById("readme-content").textContent = text;
-    });
+fetch('README.md')
+  .then(response => response.text())
+  .then(text => {
+    document.getElementById('readme-content').innerHTML =
+      marked.parse(text);
+  });
 </script>
+
+<br>
 
 <input type="number" id="jointCount" min="1" value="3">
 <button onclick="createTable()">Create Input Table</button>
