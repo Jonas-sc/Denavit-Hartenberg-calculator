@@ -84,7 +84,7 @@ function getDHParametersRad(jointCount) {
     */
     const dhparams = [];
     for (let i = 0; i < jointCount; i++) {
-        if (document.getElementById("RadianToggle").checked) {
+        if (!document.getElementById("RadianToggle").checked) {
             dhparams.push({
                 theta: degToRad(parseFloat(document.getElementById(`theta${i}`).value)),
                 d: parseFloat(document.getElementById(`d${i}`).value),

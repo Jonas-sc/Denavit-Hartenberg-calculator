@@ -1,6 +1,11 @@
+#Denavit Hartenberg Tranformation calculator
+
 Denavit-Hartemberg parameters are used to attach reference frames to the joints of a spatial kinematic chain.
 
+## Goal
+
 This Calculator aims to be a online tool for calculating the transformation matrices of these joints and the complete transformation matrix over all joints.
+
 
 The Parameters used are according to the standard Denavit-Hartemberg convention. These Parameters are: 
 - Joint angle Theta θ<sub>i</sub>: Rotational angle between the x<sub>i-1</sub> axis and the  x<sub>i</sub> axis.
